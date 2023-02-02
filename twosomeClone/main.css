@@ -1,0 +1,92 @@
+.body {
+  box-sizing: border-box;
+}
+
+.nav .logo {
+  position: absolute;
+
+  background-image: url("./images/logo_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  min-width : 150px;
+  height: 30px;
+  padding: 3vh 10px;
+  margin: 0;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: flex-end;
+
+  max-width : 80vw;
+  margin-left: 20vw;
+  margin-right: 10vw;
+}
+
+.nav .container .item {
+  flex-grow: 1;
+
+  padding-top: 5vh;
+  color: white;
+  font-weight: 700;
+  font-size: .8rem;
+
+  cursor: pointer;
+}
+
+.nav .btnMenu {
+  position: absolute;
+  top: 1.5vw;
+  right: 2vw;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("./images/ico_24_allmenu_white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.firstContent {
+  position: relative;
+  top: -100px;
+  z-index: -1;
+
+  width: 100vw;
+  height: calc(100vh + 100px);
+
+  background-image: url("./images/MODS0030_20210617220308_xgmVdukT.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.fixedBtn {
+  position: fixed;
+  bottom : 30px;
+  right : 30px;
+
+  width: 170px;
+  height: 60px;
+
+  border-style: none;
+  border-radius: 50px;
+  opacity: .9;
+  background-color: rgb(224, 47, 56);
+}
+.fixedBtn span {
+  color: white;
+  font-weight: 600;
+  font-size: .95rem;
+}
+.fixedBtn .icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("./images/ico_floating.svg");
+  background-size: cover;
+}
