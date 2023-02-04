@@ -1,0 +1,112 @@
+body {}
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(207, 207, 207, .5);
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 64px;
+  padding: 0 32px;
+}
+
+/* 로고 영역 */
+header .inner .header__logo {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+header .inner .header__logo a {
+  color:#17c864;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+/* 메뉴 영역 */
+header .inner .header__menu {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 1rem;
+  height: 32px;
+}
+header .inner .header__menu li {
+  padding: 0 16px;
+  line-height: 2rem;
+  margin-left: 20px;
+}
+header .inner .header__menu li a {
+  color: #4a4a4a;
+}
+header .inner .header__menu li a:hover {
+  color: #1dc078;
+}
+
+/* 공간 영역 */
+header .inner .header__space {
+  flex-grow: 1;
+}
+
+/* 검색 영역 */
+header .inner .header__search {
+  height: 36px;
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+header .inner .header__search input {
+  box-sizing: border-box;
+  width: 148px;
+  height: 36px;
+  font-size: 1rem;
+  color:#4a4a4a;
+  padding: 5px 9px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+header .inner .header__search input:hover {
+  border: 1px solid #c8c8c8;
+}
+header .inner .header__search input:focus {
+  outline: 2px solid #17c864;
+}
+
+header .inner .header__search i {
+  position: absolute;
+  right:9px;
+  margin: auto;
+  top:0;
+  bottom:0;
+  height: 16px;
+}
+
+/* 로그인 회원가입 영역 */
+header .inner .header__login-join {
+  display: flex;
+  gap:10px;
+  height: 34px;
+  flex-shrink: 0;
+}
+header .inner .header__login-join .btn {
+  height: 34px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 9px;
+}
+header .inner .header__login-join .btn.btn--login {
+  color: #4a4a4a;
+  background-color: white;
+}
+header .inner .header__login-join .btn.btn--join {
+  background-color: #ff7867;
+  color: white;
+}
