@@ -1,0 +1,149 @@
+
+/* Common */
+body {
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.4;
+  height: 2000px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+/* Icon */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+header {
+  background-color: #f6f5ef;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #c3c3c3;
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  z-index: 1;
+}
+
+header .inner {
+  position: relative;
+  width: 1100px;
+  height: 120px;
+
+  margin: 0 auto;
+}
+
+/* 로고 영역 */
+header .inner .header__logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  left: 0;
+}
+header .inner .header__logo a {}
+header .inner .header__logo a img {
+  display: block;
+}
+
+/* 서브 메뉴 */
+header .inner .header__sub-menu {
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 50px;
+}
+header .inner .header__sub-menu ul {
+  display: flex;
+
+}
+header .inner .header__sub-menu ul .sub-menu__item {
+  padding: 10px 15px;
+  position: relative;
+}
+header .inner .header__sub-menu ul .sub-menu__item:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+}
+header .inner .header__sub-menu ul .sub-menu__item:hover a {
+  text-decoration: underline;
+}
+header .inner .header__sub-menu ul .sub-menu__item a {
+  display: block;
+  font-weight: 300;
+}
+header .inner .header__sub-menu .sub-search {
+  margin-top: 3px;
+}
+header .inner .header__sub-menu .sub-search input {
+  box-sizing: border-box;
+  width: 36px;
+  height: 34px;
+  border-radius: 5px;
+  outline: none;
+  transition: width 0.4s;
+  border: 1px solid #c3c3c3;
+  padding: 4px 10px;
+}
+header .inner .header__sub-menu .sub-search input:focus {
+  width: 182px;
+  font-size: 12px;
+}
+header .inner .header__sub-menu .sub-search span {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 4px;
+  height: 24px;
+  margin: auto;
+}
+/* 메인 메뉴 */
+header .inner .header__main-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+header .inner .header__main-menu .main-menu__item { 
+  padding: 10px 26px 34px 26px;
+}
+header .inner .header__main-menu .main-menu__item .item__name {}
+header .inner .header__main-menu .main-menu__item:hover {
+  background-color: #2c2a29;
+  color: #669900;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header .inner .header__main-menu .main-menu__item .item__contents {
+  background-color: #2c2a29;
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  top:120px;
+  left: 0;
+  margin: auto 0;
+  display: none;
+}
+
+header .inner .header__main-menu .main-menu__item:hover .item__contents {
+  display: block;
+}
+header .inner .header__main-menu .main-menu__item .item__contents .item__contents__menu {
+
+}
