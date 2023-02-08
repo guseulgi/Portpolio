@@ -30,10 +30,69 @@ header {
   z-index: 1;
 }
 
-header .inner {
+.inner {
   position: relative;
   width: 1100px;
   margin: 0 auto;
+}
+.strong {
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 6px 20px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  transition: 0.6s;
+}
+
+.btn--green {
+  border-color: #076443;
+  color: #076443;
+}
+.btn--green:hover {
+  background-color: #076443;
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.btn--light-green {
+  border-color: #00704A;
+  color: #00704A;
+}
+.btn--light-green:hover {
+  background-color: #00704A;
+  color: white;
+  text-decoration: underline;
+}
+.btn--white {
+  border-color: white;
+  color: white;
+}
+.btn--white:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.btn--register {
+  background-color: #00704A;
+  border-color: #00704A;
+  color: white;
+}
+.btn--register:hover {
+  text-decoration: underline;
+}
+.btn--login {
+  border-color: white;
+  color: white;
+}
+.btn--login:hover {
+  text-decoration: underline;
 }
 
 header > .inner {
@@ -178,4 +237,195 @@ header .header__main-menu .main-menu__item .item__contents .item__contents__menu
 header .header__main-menu .main-menu__item .item__contents .item__contents__menu .inner > li > ul > li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+/* 배지 영역 */
+header .badges {
+  position: absolute;
+  top : 150px;
+  left: calc(1100px + (100vw - 1100px) / 2);
+}
+header .badges .badge {
+  cursor: pointer;
+}
+header .badges .badge > img {
+  display: block;
+  width: 140px;
+}
+@media screen and (max-width : 1400px) {
+  header .badges {
+    left : calc(100vw - 150px);
+  }
+}
+
+
+/* Visual 영역 */
+.visual {
+  margin-top: 120px;
+  position: relative;
+  height: 646px;
+  background-image: url('../images/visual_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.visual > .inner {
+  position: relative;
+  height: 100%;
+}
+
+.visual .inner .visual__contents {
+  position:absolute;
+  left: -132px;
+  top:181px;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.visual .inner .visual__contents .contents__image {
+  display: block;
+}
+.visual .inner .visual__contents > .btn.btn--green {
+  margin-top: 40px;
+}
+.visual .inner .visual__image1 {
+  position:absolute;
+  top: 120px;
+  left: 340px;
+  width: 290px;
+}
+.visual .inner .visual__image2 {
+  position:absolute;
+  width: 310px;
+  top:208px;
+  left: 538px;
+}
+.visual .inner .visual__image3 {
+  position:absolute;
+  width: 310px;
+  right: 27px;
+  bottom:184px;
+}
+
+/* Notice */
+.notice {
+  position: relative;
+  height: 62px;
+  display: flex;
+}
+.notice .bg-left {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: black;
+}
+.notice .bg-right {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #F5F6EF;
+}
+.notice > .inner {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.notice .inner .item__notice {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  left: 0;
+}
+.notice .inner .item__notice > li {
+  color: white;
+  font-size: 14px;
+}
+.notice .inner .item__notice > li:first-child {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.notice .inner .item__notice > span {
+  color : white;
+  font-size: 36px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.notice .inner .item__promotion {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.notice .inner .item__promotion > li {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 70px;
+}
+.notice .inner .item__promotion > span {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Reward */
+.reward {
+  position: relative;
+  background-color: #1e3932;
+}
+.reward > .inner {
+  padding: 30px 0 40px 0;
+  display: flex;
+  position: relative;
+}
+.reward .inner .contents {
+  flex-grow: 1;
+  position: relative;
+}
+.reward .inner .reward__logo {
+  display: block;
+  width: 176px;
+  height: 155px;
+  margin: 0 40px 0 40px;
+}
+.reward .inner .contents__title {
+  font-size: 26px;
+}
+.reward .inner p {
+  font-size: 17px;
+  color: white;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+.reward .inner .contents > p {
+  padding-bottom: 12px;
+}
+.reward .inner .contents > p:nth-child(2) {
+  box-shadow: 0 0.5px #f8f7f4;
+}
+.reward .inner .contents__buttons {
+  position: absolute;
+  right: 0;
+  top:54px;
+  font-size: 14px;
+}
+.reward .inner .contents__buttons > .btn.btn--register {
+  margin-right: 8px;
+}
+.reward .inner .contents__buttons > .btn.btn--login {}
+.reward .inner .reward__gift {
+  padding-top: 20px;
+  display: flex;
+}
+.reward .inner .reward__gift p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.reward .inner .reward__gift > .btn.btn--login {
+  font-size: 14px;
 }
