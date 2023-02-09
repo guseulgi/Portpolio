@@ -43,7 +43,7 @@ header {
 .btn {
   display: inline-block;
   font-size: 15px;
-  padding: 6px 20px;
+  padding: 6px 24px;
   border: 2px solid currentColor;
   border-radius: 4px;
   transition: 0.6s;
@@ -76,6 +76,24 @@ header {
 .btn--white:hover {
   background-color: white;
   color: black;
+  text-decoration: underline;
+}
+.btn--brown {
+  border-color: #633510;
+  color: #633510;
+}
+.btn--brown:hover {
+  background-color: #633510;
+  color: white;
+  text-decoration: underline;
+}
+.btn--gold {
+  border-color: #966932;
+  color: #966932;
+}
+.btn--gold:hover {
+  background-color: #966932;
+  color: white;
   text-decoration: underline;
 }
 
@@ -429,3 +447,125 @@ header .badges .badge > img {
 .reward .inner .reward__gift > .btn.btn--login {
   font-size: 14px;
 }
+
+/* Elsalvador 영역 */
+section.elsalvador {
+  position: relative;
+  background-image: url('../images/elsalvador_bg.jpg');
+  background-position: center;
+  background-size: 133%;
+  height: 500px;
+}
+section.elsalvador > .inner {
+  position: relative;
+}
+section.elsalvador .contents__image {
+  width: 310px;
+  display: block;
+  position: absolute;
+  top:43px;
+  left: 145px;
+}
+section.elsalvador .contents__right {
+  position: absolute;
+  top:172px;
+  right: 167px;
+  height: 165px;
+  width: 337px;
+}
+section.elsalvador .contents__right > img.contents__text {
+  width: 337px;
+  display: block;
+  position: absolute;
+}
+section.elsalvador .contents__right > .btn.btn--brown {
+  position: absolute;
+  bottom: 0px;
+  font-size: 15px;
+}
+
+/* Ethopia */
+.ethiopia {
+  position: relative;
+  background-image: url('../images/ethiopia_bg.png');
+  height: 400px;
+}
+.ethiopia::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  width: 420px;
+  height: 400px;
+  background-image: url('../images/ethiopia_before.png');
+  
+}
+.ethiopia::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 361px;
+  height: 400px;
+  background-image: url('../images/ethiopia_after.png');
+}
+.ethiopia .inner {
+  position: relative;
+}
+.ethiopia .contents__text {
+  width: 496px;
+  position: absolute;
+  top:125px;
+}
+.ethiopia .contents__image {
+  position: absolute;
+  right: -400px;
+}
+.ethiopia .btn.btn--gold {
+  position: absolute;
+  top:275px;
+  left: 260px;
+}
+
+/* Favorite */
+
+.favorite {
+  position: relative;
+  height: 800px;
+  background-image: url('../images/fav_bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.favorite .inner {
+  position: relative;
+  height: 100%;
+}
+.favorite .favorite__contents {
+  width: 362px;
+  height: 483px;
+  position: relative;
+  top:120px;
+}
+.favorite .favorite__contents .contents__title {
+  position: absolute;
+  width: 258px;
+  right: 0;
+}
+.favorite .favorite__contents .contents__text {
+  position: absolute;
+  width: 362px;
+  right: 0;
+  top:249px;
+}
+.favorite .favorite__contents .btn.btn--white {
+  position: absolute;
+  right: 0;
+  bottom:0;
+}
+.favorite .contents__image {
+  position: absolute;
+  top:100px;
+  right: -215px;
+  width: 912px;
+}
+
+/* Magazine */
