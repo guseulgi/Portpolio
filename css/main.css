@@ -78,6 +78,15 @@ header {
   color: black;
   text-decoration: underline;
 }
+.btn--black {
+  border-color: black;
+  color: black;
+}
+.btn--black:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+}
 .btn--brown {
   border-color: #633510;
   color: #633510;
@@ -569,3 +578,175 @@ section.elsalvador .contents__right > .btn.btn--brown {
 }
 
 /* Magazine */
+section.magazine {
+  position: relative;
+  height: 380px;
+  background-image: url('../images/magazine_bg.png');
+  background-position: center 60px;
+}
+.magazine > .inner {
+  position: relative;
+  height: 380px;
+}
+.magazine .contents__title {
+  width: 588px;
+  position: absolute;
+  top:163px;
+  left: 56px;
+}
+.magazine .contents__image {
+  width: 348px;
+  position: absolute;
+  top:0;
+  right: 59px;
+}
+.magazine .btn.btn--black {
+  position: absolute;
+  top:298px;
+  left:290px
+}
+
+/* Find Store */
+section.store {
+  position: relative;
+  height: 400px;
+  background-image: url('../images/store_bg.jpg');
+  background-position: center;
+}
+.store > .inner {
+  position: relative;
+  height: 100%;
+}
+.store .contents__image1 {
+  position: absolute;
+  width: 366px;
+  left: 65px;
+}
+.store .contents__image2 {
+  position: absolute;
+  width: 228px;
+  left: 295px;
+  top: 145px;
+}
+.store .contents__image3 {
+  position: absolute;
+  width: 348px;
+  top: 0;
+  left:150px;
+}
+.store .contents__image4 {
+  position: absolute;
+  width: 230px;
+  right: -68px;
+  bottom: 0;
+}
+.store .store__contents {
+  width: 385px;
+  position: absolute;
+  top:100px;
+  right:110px;
+}
+.store .store__contents .contents__title {
+  width: 385px;
+  margin-bottom: 12px;
+}
+.store .store__contents .contents__text {
+  width: 366px;
+  margin-bottom: 30px;
+}
+.store .store__contents .btn.btn--black {}
+
+/* Footer */
+/* Footer menu */
+footer {
+  background-color: #2C2A29;
+  color : white;
+}
+footer > .inner {
+  padding: 30px 0;
+}
+
+footer .footer__menu {
+  display: flex;
+}
+footer .footer__menu .menu__left {
+  width: 90%;
+  display: flex;
+}
+
+footer .footer__menu .menu__right {
+  width: 10%;
+}
+
+footer .footer__menu .menu__left > ul.menu__item {}
+footer .footer__menu .menu__left > ul.menu__item > li {
+  width: 200px;
+  padding-left: 20px;
+
+}
+footer .footer__menu .menu__left > ul.menu__item > li:not(.item__title) {
+  padding: 5px 0;
+}
+footer .footer__menu .menu__left > ul.menu__item > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .footer__menu .menu__left > ul.menu__item > li > a {
+  color : white;
+  cursor: pointer;
+  display: block;
+  margin: 10px 0;
+}
+
+footer .footer__menu .menu__right > img {
+  width: 14px;
+  float: right;
+}
+
+/* Footer sub-menu */
+footer .footer__sub-menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 50px 10px;
+}
+footer .footer__sub-menu > li {
+  flex-grow: 1;
+}
+footer .footer__sub-menu > li > a {
+  color : #ccc;
+}
+footer .footer__sub-menu > li:hover {
+  text-decoration: underline;
+}
+footer .footer__sub-menu > li:first-child > a {
+  color:#00B050;
+  font-weight: 700;
+}
+footer .footer__sub-menu > li.contour {
+  font-size: 9px;
+  color : #999;
+  line-height: 18px;
+}
+
+/* Footer Buttons */
+footer .footer__buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer .footer__buttons > a {
+  margin-right:2px;
+  font-size: 12px;
+}
+footer .footer__buttons:first-child > a {}
+footer .footer__buttons:nth-child(2) > a {}
+footer .footer__buttons:last-child > a {}
+
+/* Footer Copylight */
+footer .footer__copylight {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
