@@ -1,0 +1,132 @@
+section {
+  width: 100vw;
+}
+section .inner {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 120px;
+}
+.btn {
+  padding: 5px 13px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: 0.6s;
+}
+.btn--send {
+  padding: 12px 15px;
+  background-color: rgb(187, 231, 255);
+  border-color: rgb(187, 231, 255);
+  color : rgb(49, 137, 188);
+}
+.btn--send:hover, 
+.btn--delete:hover {
+  color : black;
+  background-color: white;
+  border-color:#ccc;
+  box-shadow: 5px 5px 0px #6a6a6a;
+}
+.btn--delete {
+  background-color: rgb(255, 247, 175);
+  border-color: rgb(255, 247, 175);
+  color : rgb(178, 164, 35);
+}
+
+section .inner .todo-list {
+  width: 100%;
+  border : 1px solid rgb(130, 123, 47);
+  box-shadow: 2px 2px 4px #858585;
+}
+
+section .inner .todo-list > h1 {
+  position: relative; 
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px;
+}
+
+section .inner .todo-list > h1:after,
+section .inner .todo-list > h1::before {
+  content: '[';
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  height: 100%;
+  font-size: 1.25em;
+  color: rgb(49, 137, 188);
+  
+  transition: all 0.7s ease;
+}
+section .inner .todo-list > h1:after {
+  content: ']'; 
+}
+section .inner .todo-list > h1:hover:before {
+  transform: translateX(-15px);
+  opacity: 0;
+}
+section .inner .todo-list > h1:hover:after {
+  transform: translateX(15px);
+  opacity: 0;
+}
+
+section .inner .todo-list > hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  transition: .7s;
+}
+section .inner .todo-list > hr:hover {
+  background-image: linear-gradient(to right, rgba(41, 87, 255, 0), rgba(41, 87, 255, 0.75), rgba(41, 87, 255, 0));
+}
+
+section .inner .todo-list .todo-input {
+  text-align: center;
+  margin: 20px 0;
+}
+section .inner .todo-list .todo-input > input {
+  border-radius: 3px;
+  padding: 8px 7px 8px 7px;
+  font-size: 1rem;
+  border-color: rgb(255, 247, 175);
+  transition: 0.5s;
+  color : #959595;
+  transform: translateY(3px);
+}
+section .inner .todo-list .todo-input > input:focus {
+  background-color: rgb(240, 240, 240);
+  outline: none;
+  border-color: rgb(49, 137, 188);
+  color: black;
+  font-size: 1.2rem;
+  
+}
+section .inner .todo-list .todo-input > .btn--send {}
+
+section .inner .todo-list .todo-contents {
+
+  margin-bottom: 50px;
+}
+section .inner .todo-list .todo-contents > li {
+  width: 80%;
+  height: 48px;
+  line-height: 51px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  background-color:rgb(228, 245, 255);
+  position: relative;
+}
+section .inner .todo-list .todo-contents > li > input {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  transform: translateY(3px);
+}
+
+section .inner .todo-list .todo-contents > li > button.btn--delete {
+  position: absolute;
+  right: 15px;
+  bottom: 7px;
+  transform: translateY(-1px);
+}
