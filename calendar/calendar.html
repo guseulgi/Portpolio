@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스케쥴러 구현</title>
+  <!-- Reset CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="./calendar.css" rel="stylesheet"/>
+  <!-- Main JS -->
+  <script defer src="./calendar.js"></script>
+</head>
+<body>
+  <section class="calendar">
+    <h1 class="part__year-month">2023년 2월</h1>
+    <hr/>
+    <div class="part__week-day">
+      <ul class="week">
+        <li class="sunday">日</li>						
+        <li>月</li>
+        <li>火</li>
+        <li>水</li>
+        <li>木</li>
+        <li>金</li>
+        <li class="saturday">土</li>
+      </ul>
+      <ul class="day">
+        <li class="sunday"></li>
+        <li> </li>
+        <li> </li>
+        <li>1
+        </li>
+        <li>2
+        </li>
+        <li>3
+        </li>
+        <li class="saturday">4
+        </li>
+      </ul>
+      <ul class="day">
+        <li class="sunday">5
+        </li>
+        <li>6
+        </li>
+        <li>7
+        </li>
+        <li>8
+        </li>
+        <li>9
+        </li>
+        <li>10
+        </li>
+        <li class="saturday">11
+        </li>
+      </ul>
+      <ul class="day">
+        <li class="sunday">12
+        </li>
+        <li>13
+        </li>
+        <li>14
+        </li>
+        <li>15
+        </li>
+        <li>16
+        </li>
+        <li>17
+        </li>
+        <li class="saturday">18
+        </li>
+      </ul>
+      <ul class="day">
+        <li class="sunday">19
+        </li>
+        <li>20
+        </li>
+        <li>21
+        </li>
+        <li>22
+        </li>
+        <li>23
+        </li>
+        <li>24
+        </li>
+        <li class="saturday">25
+        </li>
+      </ul>
+      <ul class="day">
+        <li class="sunday">26
+        </li>
+        <li>27
+        </li>
+        <li>28
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li class="saturday"></li>
+      </ul>
+    </div>
+  </section>
+  <section class="contents">
+    <div class="contents__date">
+      <input type="text" placeholder="날짜를 클릭하세요." />
+      <input type="text" placeholder="스케쥴을 입력해주세요."/>
+      <button class="btn">추가</button>
+    </div>
+  </section>
+</body>
+</html>
