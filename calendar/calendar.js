@@ -13,7 +13,7 @@ let clickDateInfo = function(e) {
   let tmpDate;
 
   // 에러 해결- 텍스트 노드가 있을 때만
-  if((e.target.childNodes[0] === undefined) === false) {
+  if((e.target.childNodes[0] !== undefined)) {
     tmpDate = `${e.target.childNodes[0].textContent.trim()}`;
   } else {
     return;
