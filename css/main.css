@@ -236,7 +236,7 @@ header .header__main-menu .main-menu__item:hover .item__contents {
   /* display: block; */
 }
 header .header__main-menu .main-menu__item.animate .item__contents {
-  height: 100%;
+  height: auto;
 }
 
 header .inner .header__main-menu .main-menu__item .item__contents .item__contents__menu {
@@ -392,7 +392,7 @@ header .badges .badge > img {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 60%;
+  width: 55vw;
   position: absolute;
   left: 0;
 }
@@ -403,7 +403,6 @@ header .badges .badge > img {
 .notice .inner .item__notice > li:first-child {
   font-weight: 600;
   font-size: 16px;
-  width: 100px;
 }
 
 .notice .inner .item__notice .swiper-container {
@@ -435,8 +434,10 @@ header .badges .badge > img {
 .notice .inner .item__promotion {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   position: absolute;
   right: 0;
+  width: 40vw;
   height: 100%;
 }
 .notice .inner .item__promotion > li {
