@@ -199,6 +199,7 @@ header .inner .header__sub-menu .sub-search span {
   right: 4px;
   height: 24px;
   margin: auto;
+  cursor: pointer;
 }
 /* 메인 메뉴 */
 header .inner .header__main-menu {
@@ -390,6 +391,7 @@ header .badges .badge > img {
 }
 .notice .inner .item__notice {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   width: 55vw;
@@ -397,6 +399,8 @@ header .badges .badge > img {
   left: 0;
 }
 .notice .inner .item__notice > li {
+  position: absolute;
+  left: 0;
   color: white;
   font-size: 14px;
 }
@@ -428,7 +432,7 @@ header .badges .badge > img {
   color : white;
   font-size: 36px;
   position: absolute;
-  right: 20px;
+  right: 0px;
   cursor: pointer;
 }
 .notice .inner .item__promotion {
@@ -449,6 +453,10 @@ header .badges .badge > img {
 .notice .inner .item__promotion > span {
   font-size: 36px;
   cursor: pointer;
+  transition: .4s;
+}
+.notice .inner .item__promotion > span.toggle {
+  transform: rotate(180deg);
 }
 
 /* Promotion */
@@ -469,7 +477,8 @@ header .badges .badge > img {
   height: 553px;
   position: absolute;
   text-align: center;
-
+  left: 50%;
+  transform: translate(-50%, 0);
   top : 40px;
 }
 .notice .promotion__contents .swiper-container .swiper-wrapper {
@@ -551,14 +560,30 @@ section.elsalvador .contents__image {
   position: absolute;
   top:43px;
   left: 145px;
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: 1.4s ease-in-out;
 }
+section.elsalvador .contents__image.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 section.elsalvador .contents__right {
   position: absolute;
   top:172px;
   right: 167px;
   height: 165px;
   width: 337px;
+  transform: translateX(500px);
+  opacity: 0;
+  transition: 1.8s ease-in-out;
 }
+section.elsalvador .contents__right.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 section.elsalvador .contents__right > img.contents__text {
   width: 337px;
   display: block;
@@ -600,15 +625,32 @@ section.elsalvador .contents__right > .btn.btn--brown {
   width: 496px;
   position: absolute;
   top:125px;
+  
+  transition: .9s;
+  transition-delay: .3s;
+  opacity: 0;
 }
 .ethiopia .contents__image {
   position: absolute;
   right: -400px;
+
+  transition: .9s;
+  opacity: 0;
+}
+
+.ethiopia .contents__text.animate,
+.ethiopia .contents__image.animate,
+.ethiopia .btn.btn--gold.animate {
+  opacity: 1;
 }
 .ethiopia .btn.btn--gold {
   position: absolute;
   top:275px;
   left: 260px;
+
+  transition: .9s;
+  transition-delay: .3s;
+  opacity: 0;
 }
 
 /* Favorite */
@@ -631,22 +673,51 @@ section.elsalvador .contents__right > .btn.btn--brown {
   position: relative;
   top:120px;
 }
+
 .favorite .favorite__contents .contents__title {
   position: absolute;
   width: 258px;
   right: 0;
+
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: 1.5s;
+}
+.favorite .favorite__contents .contents__title.animate {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: .3s;
 }
 .favorite .favorite__contents .contents__text {
   position: absolute;
   width: 362px;
   right: 0;
   top:249px;
+
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: 1.5s;
+}
+.favorite .favorite__contents .contents__text.animate {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: .6s;
 }
 .favorite .favorite__contents .btn.btn--white {
   position: absolute;
   right: 0;
   bottom:0;
+
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: 1.5s;
 }
+.favorite .favorite__contents .btn.btn--white.animate {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: .9s;
+}
+
 .favorite .contents__image {
   position: absolute;
   top:100px;
@@ -676,7 +747,14 @@ section.magazine {
   position: absolute;
   top:0;
   right: 59px;
+
+  opacity: 0;
+  transition: .6s;
 }
+.magazine .contents__image.animate {
+  opacity: 1;
+}
+
 .magazine .btn.btn--black {
   position: absolute;
   top:298px;
@@ -698,12 +776,26 @@ section.store {
   position: absolute;
   width: 366px;
   left: 65px;
+
+  opacity: 0;
+  transition: .9s;
+}
+.store .contents__image1.animate {
+  transition-delay: .3s;
+  opacity: 1;
 }
 .store .contents__image2 {
   position: absolute;
   width: 228px;
   left: 295px;
   top: 145px;
+
+  opacity: 0;
+  transition: .9s;
+}
+.store .contents__image2.animate {
+  transition-delay: .6s;
+  opacity: 1;
 }
 .store .contents__image3 {
   position: absolute;
@@ -716,6 +808,13 @@ section.store {
   width: 230px;
   right: -68px;
   bottom: 0;
+
+  opacity: 0;
+  transition: .9s;
+}
+.store .contents__image4.animate {
+  transition-delay: .9s;
+  opacity: 1;
 }
 .store .store__contents {
   width: 385px;
